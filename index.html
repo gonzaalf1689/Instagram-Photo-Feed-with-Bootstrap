@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Instagram Photo Feed</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/33042625ed.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <div class="d-flex flex-row justify-content-between align-items-center col-9">
+                    <a class="navbar-brand">
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="bi bi-instagram"> Instagram </i>
+                    </a>
+
+                    <div class="display-inline">
+                        <ul class="navbar-nav mr-auto">
+                            <!-- Button trigger modal -->
+                            <li><button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">
+                                    Create a new post
+                                </button></li>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <label for="query" class="form-label"></label>
+                                            <textarea id="" class="form-control" style="height: 140px"
+                                                placeholder="Write a caption ..."></textarea>
+                                        </div>
+                                        <div class="inline p-2">
+                                            <button type="button" class="btn btn-light">
+                                                <i class="fa-solid fa-camera"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-light">
+                                                <i class="fa-solid fa-location-dot"></i>
+                                            </button>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-light"
+                                                data-bs-dismiss="modal">Cancel</button>
+                                            <button type="button" class="btn btn-success">Publish</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dropdown" style="padding-left:4px;">
+                                <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenu2"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa-solid fa-gear"></i>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                    <li><button class="dropdown-item" type="button">Action</button></li>
+                                    <li><button class="dropdown-item" type="button">Another action</button></li>
+                                    <li><button class="dropdown-item" type="button">Something else here</button></li>
+                                    <div class="dropdown-divider"></div>
+                                    <li><button class="dropdown-item" type="button">Log Out</button></li>
+                                </ul>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <ul class="nav nav-pills mb-3 justify-content-center m-1" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active border-0" id="pills-home-tab" data-bs-toggle="pill"
+                data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+                <i class="fa-solid fa-grip"></i>
+            </button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link border-0" id="pills-profile-tab" data-bs-toggle="pill"
+                data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                aria-selected="false"><i class="fa-solid fa-square"></i>
+            </button>
+        </li>
+    </ul>
+    <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+            tabindex="0">
+            <!--Grid view-->
+            <div>
+                <div class="row">
+                    <div class="col-4">
+                        <img src="images/akita puppy.jpg" class="img-fluid">
+                    </div>
+                    <div class="col-4">
+                        <img src="images/Miami night.jpg" class="img-fluid" style="width: 100%; height:100%">
+                    </div>
+                    <div class="col-4">
+                        <img src="images/hawaiian-rib-eye-steak.jpeg" class="img-fluid"
+                            style="width: 100%; height:100%">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <img src="images/mountains.jpg" class="img-fluid">
+                    </div>
+                    <div class="col-4">
+                        <img src="images/greek manuscript.jpg" class="img-fluid" style="width: 100%; height:100%">
+                    </div>
+                    <div class="col-4">
+                        <img src="images/gothic cathedral.jpg" class="img-fluid">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <img src="images/breaching orca.jpg" class="img-fluid">
+                    </div>
+                    <div class="col-4">
+                        <img src="images/coding.jpg" class="img-fluid">
+                    </div>
+                    <div class="col-4">
+                        <img src="images/School of Athens.jpg" class="img-fluid" style="width: 100%; height:100%">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+            <!--Feed View-->
+            <div class="container" style="width: 600px;" ; margin:auto">
+                <div class="card">
+                    <div class="row">
+                        <h3 class="card-title col-10">Japanese Akitainu</h3>
+                        <span class="col-2 aling-self-start text-secondary">
+                            <h5>12/15</h5>
+                        </span>
+                    </div>
+                    <img src="images/akita puppy.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <p class="font-weight-bold">98 likes</p>
+                        <p class="card-text text-dark">Descending from regional hunting dogs, the Japanese Akitainu was
+                            initially restored and preserved by dedicated breeders in the Akitainu Hozonkai (Akita Dog
+                            Preservation Society; AKIHO). The breed is known for its striking appearance and its
+                            physical and mental agility.</p>
+                        <div class=row>
+                            <div class="col-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                    class="bi bi-heart" viewBox="0 0 16 16">
+                                    <path
+                                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                </svg>
+                            </div>
+                            <p style="color: gray;"">Comment...</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <br>
+            <!--Second picture-->
+            <div class=" container" style="width: 600px;" ; margin:auto">
+                            <div class="card">
+                                <div class="row">
+                                    <h3 class="card-title col-10">Miami at dusk</h3>
+                                    <span class="col-2 aling-self-start text-secondary">
+                                        <h5>12/15</h5>
+                                    </span>
+                                </div>
+                                <img src="images/Miami night.jpg" class="card-img-top">
+                                <div class="card-body">
+                                    <p class="font-weight-bold">58 likes</p>
+                                    <p class="card-text text-dark">Miami is a major city and a coastal metropolis
+                                        located in Miami-Dade County in southeastern Florida, in the United States. With
+                                        a population of 442,241 as of the 2020 census,[2] it is the second-most populous
+                                        city in Florida, the eleventh-most populous city in the Southeast U.S., and the
+                                        44th most populous city in the nation. </p>
+                                    <div class=row>
+                                        <div class="col-1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                                <path
+                                                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                            </svg>
+                                        </div>
+                                        <p style="color: gray;"">Comment...</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <br>
+             <!--third picture-->
+             <div class=" container" style="width: 600px;" ; margin:auto">
+                                        <div class="card">
+                                            <div class="row">
+                                                <h3 class="card-title col-10">HAWAIIAN RIBEYE</h3>
+                                                <span class="col-2 aling-self-start text-secondary">
+                                                    <h5>12/15</h5>
+                                                </span>
+                                            </div>
+                                            <img src="images/hawaiian-rib-eye-steak.jpeg" class="card-img-top">
+                                            <div class="card-body">
+                                                <p class="font-weight-bold">58 likes</p>
+                                                <p class="card-text text-dark">Nothing can beat this steak</p>
+                                                <div class=row>
+                                                    <div class="col-1">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                            fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                                        </svg>
+                                                    </div>
+                                                    <p style="color: gray;"">Comment...</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <br>
+             <!--fourth picture-->
+             <div class=" container" style="width: 600px;" ; margin:auto">
+                                                    <div class="card">
+                                                        <div class="row">
+                                                            <h3 class="card-title col-10">Walk towards the summit</h3>
+                                                            <span class="col-2 aling-self-start text-secondary">
+                                                                <h5>12/15</h5>
+                                                            </span>
+                                                        </div>
+                                                        <img src="images/mountains.jpg" class="card-img-top">
+                                                        <div class="card-body">
+                                                            <p class="font-weight-bold">58 likes</p>
+                                                            <p class="card-text text-dark">The path is unbelievably
+                                                                hard, but only those who reach the top can see it was
+                                                                worth the risk.</p>
+                                                            <div class=row>
+                                                                <div class="col-1">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                                                        height="20" fill="currentColor"
+                                                                        class="bi bi-heart" viewBox="0 0 16 16">
+                                                                        <path
+                                                                            d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                                                    </svg>
+                                                                </div>
+                                                                <p style="color: gray;"">Comment...</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <br>
+             <!--fifth picture-->
+             <div class=" container" style="width: 600px;" ; margin:auto">
+                                                                <div class="card">
+                                                                    <div class="row">
+                                                                        <h3 class="card-title col-10">ὁ θεὸς ἀγάπη ἐστίν
+                                                                        </h3>
+                                                                        <span
+                                                                            class="col-2 aling-self-start text-secondary">
+                                                                            <h5>12/15</h5>
+                                                                        </span>
+                                                                    </div>
+                                                                    <img src="images/greek manuscript.jpg"
+                                                                        class="card-img-top">
+                                                                    <div class="card-body">
+                                                                        <p class="font-weight-bold">58 likes</p>
+                                                                        <p class="card-text text-dark">ὁ μὴ ἀγαπῶν οὐκ
+                                                                            ἔγνω τὸν θεόν, ὅτι ὁ θεὸς ἀγάπη ἐστίν. ἐν
+                                                                            τούτῳ ἐφανερώθη ἡ ἀγάπη τοῦ θεοῦ ἐν ἡμῖν,
+                                                                            ὅτι τὸν υἱὸν αὐτοῦ τὸν μονογενῆ ἀπέσταλκεν ὁ
+                                                                            θεὸς εἰς τὸν κόσμον, ἵνα ζήσωμεν διʼ αὐτοῦ.
+                                                                        </p>
+                                                                        <div class=row>
+                                                                            <div class="col-1">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                                                    width="20" height="20"
+                                                                                    fill="currentColor"
+                                                                                    class="bi bi-heart"
+                                                                                    viewBox="0 0 16 16">
+                                                                                    <path
+                                                                                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                                                                </svg>
+                                                                            </div>
+                                                                            <p style="color: gray;"">Comment...</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <br>
+             <!--sixth picture-->
+             <div class=" container" style="width: 600px;" ; margin:auto">
+                                                                            <div class="card">
+                                                                                <div class="row">
+                                                                                    <h3 class="card-title col-10">Gothic
+                                                                                        Cathedral</h3>
+                                                                                    <span
+                                                                                        class="col-2 aling-self-start text-secondary">
+                                                                                        <h5>12/15</h5>
+                                                                                    </span>
+                                                                                </div>
+                                                                                <img src="images/gothic cathedral.jpg"
+                                                                                    class="card-img-top">
+                                                                                <div class="card-body">
+                                                                                    <p class="font-weight-bold">58 likes
+                                                                                    </p>
+                                                                                    <p class="card-text text-dark">Some
+                                                                                        of the most beautiful buildings
+                                                                                        in history were constructed
+                                                                                        during the High and Late Middle
+                                                                                        ages, when gothic architecture
+                                                                                        dominated the landscape of every
+                                                                                        major city in Europe.</p>
+                                                                                    <div class=row>
+                                                                                        <div class="col-1">
+                                                                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                                                                width="20" height="20"
+                                                                                                fill="currentColor"
+                                                                                                class="bi bi-heart"
+                                                                                                viewBox="0 0 16 16">
+                                                                                                <path
+                                                                                                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                                                                            </svg>
+                                                                                        </div>
+                                                                                        <p style="color: gray;"">Comment...</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <br>
+             <!--seventh picture-->
+             <div class=" container" style="width: 600px;" ; margin:auto">
+                                                                                        <div class="card">
+                                                                                            <div class="row">
+                                                                                                <h3
+                                                                                                    class="card-title col-10">
+                                                                                                    Breaching Orca</h3>
+                                                                                                <span
+                                                                                                    class="col-2 aling-self-start text-secondary">
+                                                                                                    <h5>12/15</h5>
+                                                                                                </span>
+                                                                                            </div>
+                                                                                            <img src="images/breaching orca.jpg"
+                                                                                                class="card-img-top">
+                                                                                            <div class="card-body">
+                                                                                                <p
+                                                                                                    class="font-weight-bold">
+                                                                                                    58 likes</p>
+                                                                                                <p
+                                                                                                    class="card-text text-dark">
+                                                                                                    Orsinus Orca or
+                                                                                                    killer whale, is a
+                                                                                                    toothed whale
+                                                                                                    belonging to the
+                                                                                                    oceanic dolphin
+                                                                                                    family, of which it
+                                                                                                    is the largest
+                                                                                                    member. It is
+                                                                                                    recognizable by its
+                                                                                                    black-and-white
+                                                                                                    patterned body. A
+                                                                                                    cosmopolitan
+                                                                                                    species, orcas can
+                                                                                                    be found in all of
+                                                                                                    the world's oceans
+                                                                                                    in a variety of
+                                                                                                    marine environments,
+                                                                                                    from Arctic and
+                                                                                                    Antarctic regions to
+                                                                                                    tropical seas.</p>
+                                                                                                <div class=row>
+                                                                                                    <div class="col-1">
+                                                                                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                                                                                            width="20"
+                                                                                                            height="20"
+                                                                                                            fill="currentColor"
+                                                                                                            class="bi bi-heart"
+                                                                                                            viewBox="0 0 16 16">
+                                                                                                            <path
+                                                                                                                d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                                                                                        </svg>
+                                                                                                    </div>
+                                                                                                    <p style="color: gray;"">Comment...</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <br>
+             <!--eigth picture-->
+             <div class=" container" style="width: 600px;" ; margin:auto">
+                                                                                                    <div class="card">
+                                                                                                        <div
+                                                                                                            class="row">
+                                                                                                            <h3
+                                                                                                                class="card-title col-10">
+                                                                                                                Coding
+                                                                                                                ...!
+                                                                                                            </h3>
+                                                                                                            <span
+                                                                                                                class="col-2 aling-self-start text-secondary">
+                                                                                                                <h5>12/15
+                                                                                                                </h5>
+                                                                                                            </span>
+                                                                                                        </div>
+                                                                                                        <img src="images/coding.jpg"
+                                                                                                            class="card-img-top">
+                                                                                                        <div
+                                                                                                            class="card-body">
+                                                                                                            <p
+                                                                                                                class="font-weight-bold">
+                                                                                                                58 likes
+                                                                                                            </p>
+                                                                                                            <p
+                                                                                                                class="card-text text-dark">
+                                                                                                                I am
+                                                                                                                learning
+                                                                                                                to code
+                                                                                                                and I am
+                                                                                                                loving
+                                                                                                                every
+                                                                                                                second
+                                                                                                                of it.
+                                                                                                            </p>
+                                                                                                            <div
+                                                                                                                class=row>
+                                                                                                                <div
+                                                                                                                    class="col-1">
+                                                                                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                                                                                        width="20"
+                                                                                                                        height="20"
+                                                                                                                        fill="currentColor"
+                                                                                                                        class="bi bi-heart"
+                                                                                                                        viewBox="0 0 16 16">
+                                                                                                                        <path
+                                                                                                                            d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                                                                                                    </svg>
+                                                                                                                </div>
+                                                                                                                <p style="color: gray;"">Comment...</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <br>
+             <!--nineth picture-->
+             <div class=" container" style="width: 600px;" ; margin:auto">
+                                                                                                                <div
+                                                                                                                    class="card">
+                                                                                                                    <div
+                                                                                                                        class="row">
+                                                                                                                        <h3
+                                                                                                                            class="card-title col-10">
+                                                                                                                            School
+                                                                                                                            of
+                                                                                                                            Athens
+                                                                                                                        </h3>
+                                                                                                                        <span
+                                                                                                                            class="col-2 aling-self-start text-secondary">
+                                                                                                                            <h5>12/15
+                                                                                                                            </h5>
+                                                                                                                        </span>
+                                                                                                                    </div>
+                                                                                                                    <img src="images/School of Athens.jpg"
+                                                                                                                        class="card-img-top">
+                                                                                                                    <div
+                                                                                                                        class="card-body">
+                                                                                                                        <p
+                                                                                                                            class="font-weight-bold">
+                                                                                                                            58
+                                                                                                                            likes
+                                                                                                                        </p>
+                                                                                                                        <p
+                                                                                                                            class="card-text text-dark">
+                                                                                                                            The
+                                                                                                                            School
+                                                                                                                            of
+                                                                                                                            Athens
+                                                                                                                            (Italian:
+                                                                                                                            Scuola
+                                                                                                                            di
+                                                                                                                            Atene)
+                                                                                                                            is
+                                                                                                                            a
+                                                                                                                            fresco
+                                                                                                                            by
+                                                                                                                            the
+                                                                                                                            Italian
+                                                                                                                            Renaissance
+                                                                                                                            artist
+                                                                                                                            Raphael.
+                                                                                                                            It
+                                                                                                                            was
+                                                                                                                            painted
+                                                                                                                            between
+                                                                                                                            1509
+                                                                                                                            and
+                                                                                                                            1511
+                                                                                                                            as
+                                                                                                                            a
+                                                                                                                            part
+                                                                                                                            of
+                                                                                                                            Raphael's
+                                                                                                                            commission
+                                                                                                                            to
+                                                                                                                            decorate
+                                                                                                                            the
+                                                                                                                            rooms
+                                                                                                                            now
+                                                                                                                            known
+                                                                                                                            as
+                                                                                                                            the
+                                                                                                                            Stanze
+                                                                                                                            di
+                                                                                                                            Raffaello,
+                                                                                                                            in
+                                                                                                                            the
+                                                                                                                            Apostolic
+                                                                                                                            Palace
+                                                                                                                            in
+                                                                                                                            the
+                                                                                                                            Vatican.
+                                                                                                                        </p>
+                                                                                                                        <div
+                                                                                                                            class=row>
+                                                                                                                            <div
+                                                                                                                                class="col-1">
+                                                                                                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                                                                                                    width="20"
+                                                                                                                                    height="20"
+                                                                                                                                    fill="currentColor"
+                                                                                                                                    class="bi bi-heart"
+                                                                                                                                    viewBox="0 0 16 16">
+                                                                                                                                    <path
+                                                                                                                                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                                                                                                                </svg>
+                                                                                                                            </div>
+                                                                                                                            <p style="color: gray;"">Comment...</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <script src=" https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+                                                                                                                                crossorigin="anonymous">
+                                                                                                                                </script>
+                                                                                                                                <script
+                                                                                                                                    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+                                                                                                                                    integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+                                                                                                                                    crossorigin="anonymous"></script>
+</body>
+
+
+
+</html>
